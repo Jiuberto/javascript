@@ -55,3 +55,27 @@ console.log(pessoa);
 let mens = `${pessoa.nome} tem ${pessoa.idade} anos de idade, mede ${pessoa.medidasFisicas.peso} e pesa ${pessoa.medidasFisicas.altura}. Contato ${pessoa.telefone[0]}`
 
 console.log(mens);
+
+//array de objeto
+const livros = [
+    {
+        titulos: "Harry Potter",
+        autor: 'J.K. Rowling'
+    },
+    {
+        titulos: 'Crônicas de Nárnia',
+        autor: 'C.S. Lewis'
+    },
+    {
+        titulos: 'Cronicas de Olam',
+        autor: 'L.L. Wurlitzer'
+    }
+]
+
+console.log(livros);
+
+console.log(livros[1].titulos);
+
+console.log('----------');
+
+console.table(livros);
