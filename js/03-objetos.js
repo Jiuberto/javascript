@@ -35,4 +35,23 @@ let mensagem = [
 
 console.log(mensagem);
 
+//objeto com array e outro objeto
+const pessoa = {
+    nome: "Aragorn",
+    idade: 87,
 
+    /* Obs: usamos aspas neste caso pois não se trata de números matemáticos ou monetários. */
+    telefone: ['11 94825-4658','11-90364-7483'],
+
+    //Propriedades com objetos
+    medidasFisicas: {
+        peso: 80,
+        altura: 1.80
+    }
+}
+
+console.log(pessoa);
+
+let mens = `${pessoa.nome} tem ${pessoa.idade} anos de idade, mede ${pessoa.medidasFisicas.peso} e pesa ${pessoa.medidasFisicas.altura}. Contato `
+
+console.log(mens);
