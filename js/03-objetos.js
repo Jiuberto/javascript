@@ -52,6 +52,6 @@ const pessoa = {
 
 console.log(pessoa);
 
-let mens = `${pessoa.nome} tem ${pessoa.idade} anos de idade, mede ${pessoa.medidasFisicas.peso} e pesa ${pessoa.medidasFisicas.altura}. Contato `
+let mens = `${pessoa.nome} tem ${pessoa.idade} anos de idade, mede ${pessoa.medidasFisicas.peso} e pesa ${pessoa.medidasFisicas.altura}. Contato ${pessoa.telefone[0]}`
 
 console.log(mens);
