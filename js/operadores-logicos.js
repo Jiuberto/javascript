@@ -36,3 +36,14 @@ if (onibus == 2203 || onibus == 2019) {
 } else {
     console.log('aguarde');
 }
+
+console.log('======');
+
+//operador de negação/not (!)
+let blackFriday = false
+
+if (!blackFriday) {
+    console.log('preços normais');
+} else {
+    console.log('desconto');
+}
