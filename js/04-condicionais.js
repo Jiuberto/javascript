@@ -63,3 +63,20 @@ if (idade >= 18) {
     texto3 = 'idoso(a)'
 }
 console.log(`${usuario} tem ${idade} anos é ${texto3}`)
+
+console.log('-----------');
+
+//condicional switch/case
+let opcao = 1
+let mensagem
+
+switch (opcao) {
+    case 1: mensagem = 'informações'; break;
+    case 2: mensagem = 'informações'; break;
+    case 3: mensagem = 'informações'; break;
+
+    default: mensagem = 'falar com atendente'
+        break;
+}
+console.log("opção escolhida " + opcao);
+console.log('mensagem ' + mensagem);

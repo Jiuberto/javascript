@@ -33,3 +33,18 @@ Feita através de diferentes tipos armazenados em memória RAM com o uso de **va
 
 Dica: para verificar o tipo de dado de uma variável/constante, usamos o comando `typeof nameDaVariavelOuContante`
 
+---
+
+## sobre operadores lógicos
+
+### Operadores && (E/AND)
+
+Ao usar condicionais com **&&**, todas as condições precisam ser verdadeiras para que o resultado seja verdadeiro.
+
+### Operador || (ou/or)
+
+Ao usar condicionais com **||**, basta que apenas uma das condições seja verdadeira para que o resultado seja verdadeiro.
+
+### operador ! (negação/not)
+
+Ao usar condicionais com **!**, ocorre a inversão de lógica. Portamto, o que era **true/verdadeiro** passa a ser tratado como **false/falso** e vice-versa. Operador muito útil para inversão de lógica de funções e outros recursos.
