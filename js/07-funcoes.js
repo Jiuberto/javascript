@@ -48,12 +48,59 @@ let desconto = preco * 0.10 //10%
 let precoFinal = preco - desconto
 
 function formatar(valor){
-    return new Intl.NumberFormat('pt-br', {
+    /* Constante/variavel de escopo LOCAL, ou seja, sópode ser usada aqui dentro desta função */
+
+    const opcoes = {
         style:'currency',
         currency: 'BRL'
-    }).format(valor)
+    }
+    return new Intl.NumberFormat('pt-br', opcoes).format(valor)
 }
+
 
 console.log(`preço: ${formatar(preco)}`);
 console.log(`desconto: ${formatar(desconto)}`);
 console.log(`preço fin: ${formatar(precoFinal)}`);
+
+console.log("--------------------");
+
+/* Sintaxe 3: Arrow Function
+Sintaxe moderna para funções no JavaScript, bastante usada em biblioteca/frameworks como React, Reactive Native, Angular, Vue e etc.
+
+A sintaxe geral é:
+
+const algumNome - () => {};
+
+No entanto, esta sintaxe pode ser simplificada em alguns casos
+*/
+
+//versão 1
+/* function dobra(valor) {
+    return valor * 2
+} */
+
+//versão 2 (arrow function)
+const dobra = valor =>  valor * 2
+
+// Chamada
+console.log( dobra(10));
+console.log( dobra(55));
+console.log( dobra(32));
+
+console.log('--------------------------------');
+
+// Funções como métodos/comportamentos de Objetos
+let pessoa = {
+    nome:'fulano',
+    idade: 25,
+    verificaIdade() {
+        if (PermissionStatus.idade >= 18) {
+            return 'maior'
+        } else {
+            return 'menor'
+        }
+    }
+}
+
+console.log(pessoa.nome);
+console.log(`É ${pessoa.verificaIdade()}`);
