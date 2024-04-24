@@ -48,7 +48,7 @@ let desconto = preco * 0.10 //10%
 let precoFinal = preco - desconto
 
 function formatar(valor){
-    /* Constante/variavel de escopo LOCAL, ou seja, sópode ser usada aqui dentro desta função */
+    /* Constante/variavel de escopo LOCAL, ou seja, só pode ser usada aqui dentro desta função */
 
     const opcoes = {
         style:'currency',
