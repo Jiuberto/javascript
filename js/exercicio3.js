@@ -4,7 +4,7 @@
 let dolar = 5000
 let cotacao = 5.16 
 
-//(parametro)
+//(parametro) parmetros recebem dados que vairiam
 function converterEmReais(valor) {
     return valor * cotacao
 }
