@@ -37,5 +37,31 @@ const ed = document.querySelector('.editores h2')
 console.log(ed);
 
 //exemplo 3 = querySelectorAll - funciona parecido com array
-const h22 = document.querySelectorAll('p, a, p, ')
+const h22 = document.querySelectorAll('p, a, p')
 console.log(h22);
+
+/* Modificando dom:
+podemos alterar conteudo, tags, estilos, criar elementos, remover elementos etc
+*/
+
+//alteraçao de conteudo text
+legenda.textContent = 'imagem do modelo de objetos do documento'
+
+ed.innerHTML = '<i>Front-End</i>'
+
+//alter de esty inline (CSS in JS)
+back.style.color = 'red'
+
+//Aplic de classes css via JS
+titulo.classList.add('destaque')
+
+const listEdit = [
+    {
+        nome: 'vsc',
+        fin: 'dev web em geral'
+    }
+    {
+        nome:'xcode',
+        fin:'dev de aplic ios'
+    }
+]
