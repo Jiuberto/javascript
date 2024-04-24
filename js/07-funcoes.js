@@ -93,7 +93,7 @@ console.log('--------------------------------');
 let pessoa = {
     nome:'fulano',
     idade: 25,
-    verificaIdade() {
+    verificaIdade(pessoa) {
         if (PermissionStatus.idade >= 18) {
             return 'maior'
         } else {
