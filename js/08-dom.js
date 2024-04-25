@@ -55,13 +55,47 @@ back.style.color = 'red'
 //Aplic de classes css via JS
 titulo.classList.add('destaque')
 
-const listEdit = [
+const listaDeEditores = [
     {
-        nome: 'vsc',
-        fin: 'dev web em geral'
-    }
+        nome: 'Visual Studio Code',
+        fin: 'desenvolvimento Web em geral'
+    },
     {
-        nome:'xcode',
-        fin:'dev de aplic ios'
+        nome: 'Xcode',
+        fin: 'desenvolvimento de aplicativos ios'
+    },
+    {
+        nome: 'Android Studio',
+        fin: 'desenvolvimento de aplicativos Android'
     }
 ]
+
+
+//Acesando/selecionado a lista que será usada no HTML
+const lista = document.querySelector('.lista')
+console.log(lista);
+
+/* Percorrer (loop) um array de listaDeEditores e criar os itens <li> com o conteudo do array e adicionaá-los à lista HTML. */
+
+//For (variavel/constante de acesso of arrayComDadosQueQueremosAcessar) {}
+for (const editor of listaDeEditores) {
+    console.log(editor.nome);
+    // 1): criar elemento <li>
+    const item = document.createElement('li')
+
+    // 2) adicionar o conteudo ao novo elemento
+    item.innerHTML = `<b>${editor.nome}</b>: ${editor.fin}`
+
+    // 3) adicionar o elemento a lista <ol>
+    lista.appendChild(item)
+}
+
+/* Criando/configurando atributos HTML via js */
+const linksDeReferencia = document.querySelectorAll('.referencias a')
+
+//acessa cada item da lista individualmente
+for (const link of linksDeReferencia) {
+   console.log(link);
+   //colocandoo atributo target valendo _blank em cada link para abrir nova guia
+    link.setAttribute('target', '_blank')
+}
