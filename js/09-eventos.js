@@ -5,6 +5,8 @@ const exemplo1 = document.querySelector('#exemplo01')
 const mensagem = document.querySelector('#mensagem')
 const pagina = document.querySelector('body')
 const video = document.querySelector('video')
+const elementosNoturnos = document.querySelectorAll('.noturno');
+
 
 // criando um objeto de audio referenciando o arquivo
 const efeitoSonoro = new Audio()
@@ -56,4 +58,20 @@ const botao = document.querySelector('#noturno')
 botao.addEventListener('click', function () {
     pagina.classList.toggle('noturno') //função de ligar/desligar toggler = alternar
     divContainer.classList.toggle('noturno')
+
+    /* Desafio
+
+    1)aplicar efeito de mudanças de cores suave
+
+    2) fazer o botão mudar de texto, ou seja, inicie com o texto 'Ativar' e trocar para texto "desativer" conforme o que estiver acontecendo.
+
+*/
+
+ botao.addEventListener('click', function () {
+    pagina.style.transform = 'noturno'
+}) 
+
+
+
 })
+
