@@ -68,7 +68,7 @@ botao.addEventListener('click', function () {
 */
 
  botao.addEventListener('click', function () {
-    pagina.style.transform = 'noturno'
+    pagina.style.transition = 1
 }) 
 
 
