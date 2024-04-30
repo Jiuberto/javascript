@@ -81,11 +81,21 @@ botao.addEventListener('click', function () {
 }
  */
 
-if (botao.textContent == 'Ativar') {
+/* if (botao.textContent == 'Ativar') {
+    botao.textContent = 'Desativar'
+} else {
+    botao.textContent = 'Ativar'
+} */
+
+if (pagina.classList.contains('noturno')) {
     botao.textContent = 'Desativar'
 } else {
     botao.textContent = 'Ativar'
 }
+
+
+
+
 
 })
 
