@@ -63,15 +63,40 @@ botao.addEventListener('click', function () {
 
     1)aplicar efeito de mudanças de cores suave
 
+
+
     2) fazer o botão mudar de texto, ou seja, inicie com o texto 'Ativar' e trocar para texto "desativer" conforme o que estiver acontecendo.
 
 */
 
  botao.addEventListener('click', function () {
-    pagina.style.transition = 1
+    pagina.style.transition = '2s'
+    divContainer.style.transition = '2s'
 }) 
 
+/* if (botao.textContent == 'Ativar') {
+    console.log("Mude para Desativar");
+} else {
+    console.log('mudar para Ativar');
+}
+ */
 
+if (botao.textContent == 'Ativar') {
+    botao.textContent = 'Desativar'
+} else {
+    botao.textContent = 'Ativar'
+}
 
 })
 
+/* sobre "==" e "===" 
+
+==  IGUALDADE (somente valor)
+=== IGUALDADE ESTRITA (considerando valor E tipo de dado)
+
+*/
+
+let a = 10
+let b = '10'
+console.log(a == b);
+console.log(a === b);
